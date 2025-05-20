@@ -1,0 +1,10 @@
+{
+    "Channel1": {
+        "conductor_channel_id": "ABC",
+        "mediaconnect_flows": [
+            "arn:aws:mediaconnect:...fill the mediaconnect",
+            "arn:aws:mediaconnect:...fill the mediaconnect"
+        ],
+        "medialive_id": "123"
+    }
+}
