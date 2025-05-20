@@ -16,14 +16,16 @@ This project is a Python script to start AWS MediaLive channels, MediaConnect fl
 - `boto3` library
 - `requests` library
 - `python-dotenv` library
+- https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+- https://docs.aws.amazon.com/elemental-cl3/latest/apireference/hashing-api-key.html
 
 ## Setup
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone https://github.com/repo.git
+   cd repo
    ```
 
 2. Create a virtual environment and activate it (optional but recommended):
@@ -50,8 +52,6 @@ This project is a Python script to start AWS MediaLive channels, MediaConnect fl
    api_url_start=https://your.api.endpoint/start
    ```
 
-5. Prepare your channel configuration file `Channels.json`. For security reasons, do not commit your real `Channels.json` file. Use `Channels.example.json` as a template.
-
 ## Usage
 
 Run the script with the required channel argument:
@@ -64,7 +64,6 @@ Additional options:
 
 - `--config`: Path to the channel configuration JSON file (default: `./Channels.json`)
 - `--skip-subnet-check`: Skip checking IP availability in subnets
-- `--env-file`: Custom path to `.env` file
 
 Example:
 
@@ -74,13 +73,4 @@ python Example_Boto3_Start_AWS_Channel.py --channel Channel1 --skip-subnet-check
 
 ## Logging
 
-Logs are saved to `channel_operations.log`. Make sure this file is ignored in `.gitignore`.
-
-## Security Notes
-
-- Never commit your `.env` file or any file containing secrets to the repository.
-- Mask or exclude any sensitive identifiers from configuration files before sharing.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+Logs are saved to `channel_operations.log`.
