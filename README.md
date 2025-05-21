@@ -7,7 +7,6 @@ This project is a Python script to start AWS MediaLive channels, MediaConnect fl
 - Start MediaConnect flows by Flow ARN
 - Start Conductor channels via authenticated API calls
 - Check subnet IP availability before starting channels
-- Environment configuration via `.env` file
 - Logging of operations and errors
 
 ## Requirements
@@ -24,7 +23,7 @@ This project is a Python script to start AWS MediaLive channels, MediaConnect fl
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/repo.git
+   git clone https://github.com/reponame.git
    cd repo
    ```
 
